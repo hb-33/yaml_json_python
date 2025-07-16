@@ -1,0 +1,12 @@
+alert_thresholds:
+  error_rate: 0.02
+  latency_ms: 500
+enabled: false
+notifications:
+  email: alerts@corpbank.com
+  slack_channel: '#alerts-payments'
+schedule:
+  end_time: '20:00'
+  start_time: 08:00
+  timezone: EST
+service_name: payment_gateway

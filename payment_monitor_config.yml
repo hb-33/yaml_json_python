@@ -1,0 +1,12 @@
+service_name: payment_gateway #value is string type?
+alert_thresholds: #is this dictionary where alert_thresholds is the key and then the values are again dictionary?
+  error_rate: 0.02
+  latency_ms: 500
+notifications: #is this dictionary where notifications is the key and then the values are again dictionary?
+  email: alerts@corpbank.com
+  slack_channel: "#alerts-payments"
+enabled: false #value is boolean type?
+schedule: #is this dictionary where schedule is the key and then the values are again dictionary?
+  start_time: "08:00"
+  end_time: "20:00"
+  timezone: "EST"

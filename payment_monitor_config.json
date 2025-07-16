@@ -1,0 +1,17 @@
+{
+  "service_name": "payment_gateway",
+  "alert_thresholds": {
+    "error_rate": 0.02,
+    "latency_ms": 500
+  },
+  "notifications": {
+    "email": "alerts@corpbank.com",
+    "slack_channel": "#alerts-payments"
+  },
+  "enabled": false,
+  "schedule": {
+    "start_time": "08:00",
+    "end_time": "20:00",
+    "timezone": "EST"
+  }
+}
